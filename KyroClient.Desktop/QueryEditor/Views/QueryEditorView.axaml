@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:avaloniaEdit="using:AvaloniaEdit"
+             x:Class="KyroClient.Desktop.QueryEditor.Views.QueryEditorView">
+
+    <avaloniaEdit:TextEditor x:Name="Editor"
+                             FontFamily="JetBrains Mono, Cascadia Code, Consolas, monospace"
+                             FontSize="14"
+                             Background="#1E1F22"
+                             Foreground="#BCBEC4"
+                             ShowLineNumbers="True"
+                             HorizontalScrollBarVisibility="Auto"
+                             VerticalScrollBarVisibility="Auto"
+                             WordWrap="False" />
+</UserControl>

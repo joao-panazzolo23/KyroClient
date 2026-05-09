@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyroClient.EncryptFile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cbeeb49322039706eff3cbb0768161a5f3b9e94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190c5b27a031155adbd8a433617f632dd536e267")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyroClient.EncryptFile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyroClient.EncryptFile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

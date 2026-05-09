@@ -9,6 +9,7 @@
         x:Class="KyroClient.Desktop.Main.Views.MainWindow"
         x:DataType="viewModels:MainWindowViewModel"
         xmlns:sidebar="using:KyroClient.Desktop.Sidebar.Views"
+        xmlns:views="using:KyroClient.Desktop.QueryEditor.Views"
         Width="1400"
         Height="900"
         Background="#1E1F22"
@@ -20,11 +21,6 @@
     <Design.DataContext>
         <viewModels:MainWindowViewModel />
     </Design.DataContext>
-    <!-- -->
-    <!-- <DockPanel> -->
-    <!--     <sidebar:SidebarView DockPanel.Dock="Left" /> -->
-    <!--     <Border Background="#1E1F22" /> -->
-    <!-- </DockPanel> -->
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -42,7 +38,8 @@
                       VerticalAlignment="Stretch"
                       Cursor="SizeWestEast" />
 
-        <Border Grid.Column="2" Background="#1E1F22" />
+        <views:QueryEditorView Grid.Column="2" />
+
     </Grid>
 
 </Window>

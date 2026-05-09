@@ -6,6 +6,7 @@
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.Core.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.AssemblyReference.cache
+/home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.GeneratedMSBuildEditorConfig.editorconfig
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfoInputs.cache
 /home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfo.cs
