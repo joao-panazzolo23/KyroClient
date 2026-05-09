@@ -20,9 +20,10 @@
     <Design.DataContext>
         <viewModels:MainWindowViewModel />
     </Design.DataContext>
-    
+
     <DockPanel>
-        <sidebar:SidebarView DockPanel.Dock="Left"/>
+        <sidebar:SidebarView DockPanel.Dock="Left" />
+        <Border Background="#1E1F22" />
     </DockPanel>
 
 </Window>

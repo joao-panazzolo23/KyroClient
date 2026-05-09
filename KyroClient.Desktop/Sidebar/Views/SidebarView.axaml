@@ -101,7 +101,8 @@
         <!-- Expandable Panel -->
         <Border x:Name="PanelContainer"
                 Background="{StaticResource SidebarBgBrush}"
-                Width="260"
+                MinWidth="320"
+                MaxWidth="400"
                 BorderThickness="0,0,1,0"
                 BorderBrush="{StaticResource SeparatorBrush}">
 

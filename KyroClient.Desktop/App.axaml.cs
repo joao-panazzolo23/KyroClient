@@ -14,11 +14,11 @@ public partial class App : Application
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
-       
     }
 
     public override void OnFrameworkInitializationCompleted()
     {
+        //todo: separate this into something else
         var collection = new ServiceCollection();
         collection.AddSingleton<MainWindowViewModel>();
         collection.AddSingleton<SidebarView>();
