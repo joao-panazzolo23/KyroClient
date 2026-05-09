@@ -1,6 +1,8 @@
 /home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.deps.json
 /home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.csproj.AssemblyReference.cache
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
 /home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.GeneratedMSBuildEditorConfig.editorconfig
 /home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfoInputs.cache
 /home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfo.cs

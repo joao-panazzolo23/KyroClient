@@ -4,7 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="KyroClient.Desktop/App.axaml" value="KyroClient.Desktop/KyroClient.Desktop.csproj" />
+        <entry key="KyroClient.Desktop/Main/Views/MainWindow.axaml" value="KyroClient.Desktop/KyroClient.Desktop.csproj" />
+        <entry key="KyroClient.Desktop/Sidebar/Views/SidebarView.axaml" value="KyroClient.Desktop/KyroClient.Desktop.csproj" />
         <entry key="KyroClient.Desktop/Views/MainWindow.axaml" value="KyroClient.Desktop/KyroClient.Desktop.csproj" />
+        <entry key="KyroClient.Desktop/Workspace/Views/WorkspaceView.axaml" value="KyroClient.Desktop/KyroClient.Desktop.csproj" />
       </map>
     </option>
   </component>

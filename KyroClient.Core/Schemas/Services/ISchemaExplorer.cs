@@ -4,14 +4,14 @@ namespace KyroClient.Core.Schemas.Services;
 
 public interface ISchemaExplorer
 {
-    Task<IReadOnlyList<DatabaseInfo>> GetDatabasesAsync(CancellationToken ct = default);
+    Task<IReadOnlyList<DatabaseInfo>> GetDatabases(CancellationToken ct = default);
 
-    Task<IReadOnlyList<TableInfo>> GetTablesAsync(
+    Task<IReadOnlyList<TableInfo>> GetTables(
         string database,
         CancellationToken ct = default
     );
 
-    Task<IReadOnlyList<ColumnInfo>> GetColumnsAsync(
+    Task<IReadOnlyList<ColumnInfo>> GetColumns(
         string database,
         string table,
         CancellationToken ct = default

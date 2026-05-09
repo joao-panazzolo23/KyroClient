@@ -7,15 +7,23 @@ namespace KyroClient.PostgreSql.Connection;
 
 public class PostgreSqlConnection : IDatabaseConnection
 {
-    private readonly NpgsqlConnection _inner;
+    public readonly NpgsqlConnection Conn;
     IConnectionOptions IDatabaseConnection.Options { get; }
     ConnectionState IDatabaseConnection.State { get; }
 
+    public PostgreSqlConnection(IConnectionOptions options)
+    {
+        //TODO: REMOVE HARDCODE 
+        Conn = new NpgsqlConnection(
+            "Host=localhost;Port=5432;Database=breadboard;Username=postgres;Password=postgres;"
+        );
+    }
+
     public Task OpenAsync(CancellationToken ct = default)
-        => _inner.OpenAsync(ct);
+        => Conn.OpenAsync(ct);
 
     public Task CloseAsync()
-        => _inner.CloseAsync();
+        => Conn.CloseAsync();
 
     /// <summary>
     /// Todo: this is returning just a bool. It could be MUCH MORE detailed than that,
@@ -40,5 +48,7 @@ public class PostgreSqlConnection : IDatabaseConnection
         }
     }
 
-    public async ValueTask DisposeAsync() => await _inner.DisposeAsync();
+    public IDbCommand CreateCommand() => Conn.CreateCommand();
+
+    public async ValueTask DisposeAsync() => await Conn.DisposeAsync();
 }

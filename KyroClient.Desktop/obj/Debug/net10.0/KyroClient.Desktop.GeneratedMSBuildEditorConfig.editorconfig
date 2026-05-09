@@ -28,9 +28,11 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Main/Views/MainWindow.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = 
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/App.axaml]
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Main/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Sidebar/Views/SidebarView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

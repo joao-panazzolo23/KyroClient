@@ -1,0 +1,144 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:material="using:Material.Icons.Avalonia"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="KyroClient.Desktop.Sidebar.Views.SidebarView">
+
+    <UserControl.Resources>
+        <Color x:Key="SidebarBg">#1E1F22</Color>
+        <Color x:Key="IconStripBg">#2B2D30</Color>
+        <Color x:Key="AccentBlue">#4D8CC8</Color>
+        <Color x:Key="FgMuted">#7A7E85</Color>
+        <Color x:Key="FgDefault">#BCBEC4</Color>
+        <Color x:Key="FgActive">#FFFFFF</Color>
+        <Color x:Key="Separator">#3C3F41</Color>
+
+        <SolidColorBrush x:Key="SidebarBgBrush" Color="{StaticResource SidebarBg}" />
+        <SolidColorBrush x:Key="IconStripBgBrush" Color="{StaticResource IconStripBg}" />
+        <SolidColorBrush x:Key="AccentBlueBrush" Color="{StaticResource AccentBlue}" />
+        <SolidColorBrush x:Key="FgMutedBrush" Color="{StaticResource FgMuted}" />
+        <SolidColorBrush x:Key="FgDefaultBrush" Color="{StaticResource FgDefault}" />
+        <SolidColorBrush x:Key="FgActiveBrush" Color="{StaticResource FgActive}" />
+        <SolidColorBrush x:Key="SeparatorBrush" Color="{StaticResource Separator}" />
+    </UserControl.Resources>
+
+    <UserControl.Styles>
+        <Style Selector="Button.sidebar-icon">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Margin" Value="4,2" />
+        </Style>
+        <Style Selector="Button.sidebar-icon:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#3C3F41" />
+        </Style>
+        <Style Selector="Button.sidebar-icon.active /template/ ContentPresenter">
+            <Setter Property="Background" Value="#2D3A4A" />
+        </Style>
+    </UserControl.Styles>
+
+    <DockPanel Background="{StaticResource SidebarBgBrush}">
+
+        <!-- Icon Strip -->
+        <Border DockPanel.Dock="Left"
+                Background="{StaticResource IconStripBgBrush}"
+                Width="48"
+                BorderThickness="0,0,1,0"
+                BorderBrush="{StaticResource SeparatorBrush}">
+            <DockPanel>
+
+                <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="0,8,0,0">
+
+                    <Button Classes="sidebar-icon active"
+                            x:Name="BtnConnections"
+                            ToolTip.Tip="Connections"
+                            Click="OnIconClick"
+                            Tag="Connections">
+                        <material:MaterialIcon Kind="Database"
+                                               Width="20" Height="20"
+                                               Foreground="{StaticResource FgActiveBrush}" />
+                    </Button>
+
+                    <Button Classes="sidebar-icon"
+                            x:Name="BtnSwitchDb"
+                            ToolTip.Tip="Switch Database"
+                            Click="OnIconClick"
+                            Tag="SwitchDb">
+                        <material:MaterialIcon Kind="DatabaseArrowRight"
+                                               Width="20" Height="20"
+                                               Foreground="{StaticResource FgMutedBrush}" />
+                    </Button>
+
+                </StackPanel>
+
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" Margin="0,0,0,8">
+
+                    <Button Classes="sidebar-icon"
+                            x:Name="BtnSettings"
+                            ToolTip.Tip="Settings"
+                            Click="OnIconClick"
+                            Tag="Settings">
+                        <material:MaterialIcon Kind="Cog"
+                                               Width="20" Height="20"
+                                               Foreground="{StaticResource FgMutedBrush}" />
+                    </Button>
+
+                </StackPanel>
+
+            </DockPanel>
+        </Border>
+
+        <!-- Expandable Panel -->
+        <Border x:Name="PanelContainer"
+                Background="{StaticResource SidebarBgBrush}"
+                Width="260"
+                BorderThickness="0,0,1,0"
+                BorderBrush="{StaticResource SeparatorBrush}">
+
+            <DockPanel>
+
+                <Border DockPanel.Dock="Top"
+                        Padding="12,10,8,10"
+                        BorderThickness="0,0,0,1"
+                        BorderBrush="{StaticResource SeparatorBrush}">
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right"
+                                Classes="sidebar-icon"
+                                Width="24" Height="24"
+                                Margin="0"
+                                ToolTip.Tip="Close"
+                                Click="OnClosePanel">
+                            <material:MaterialIcon Kind="Close"
+                                                   Width="14" Height="14"
+                                                   Foreground="{StaticResource FgMutedBrush}" />
+                        </Button>
+                        <TextBlock x:Name="PanelTitle"
+                                   Text="Connections"
+                                   FontSize="11"
+                                   FontWeight="SemiBold"
+                                   LetterSpacing="0.5"
+                                   Foreground="{StaticResource FgDefaultBrush}"
+                                   VerticalAlignment="Center" />
+                    </DockPanel>
+                </Border>
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <StackPanel x:Name="PanelContent" Margin="0,4,0,4" />
+                </ScrollViewer>
+
+            </DockPanel>
+        </Border>
+
+    </DockPanel>
+</UserControl>

@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GIj11kqYhRc=",
+  "dgSpecHash": "AxavYVFBcKg=",
   "success": true,
   "projectFilePath": "/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/KyroClient.PostgreSql.csproj",
   "expectedPackageFiles": [
+    "/home/john/.nuget/packages/avalonia/12.0.0/avalonia.12.0.0.nupkg.sha512",
+    "/home/john/.nuget/packages/avalonia.buildservices/11.3.2/avalonia.buildservices.11.3.2.nupkg.sha512",
+    "/home/john/.nuget/packages/avalonia.remote.protocol/12.0.0/avalonia.remote.protocol.12.0.0.nupkg.sha512",
+    "/home/john/.nuget/packages/material.icons/3.0.2/material.icons.3.0.2.nupkg.sha512",
+    "/home/john/.nuget/packages/material.icons.avalonia/3.0.2/material.icons.avalonia.3.0.2.nupkg.sha512",
+    "/home/john/.nuget/packages/microcom.runtime/0.11.4/microcom.runtime.0.11.4.nupkg.sha512",
     "/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
     "/home/john/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
     "/home/john/.nuget/packages/npgsql/10.0.2/npgsql.10.0.2.nupkg.sha512"

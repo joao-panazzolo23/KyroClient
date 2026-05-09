@@ -11,4 +11,5 @@ public interface IDatabaseConnection : IAsyncDisposable
     Task OpenAsync(CancellationToken ct = default);
     Task CloseAsync();
     Task<bool> TestAsync(CancellationToken ct = default);
+    IDbCommand CreateCommand();
 }

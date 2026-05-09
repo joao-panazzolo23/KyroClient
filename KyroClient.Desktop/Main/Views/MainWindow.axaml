@@ -3,16 +3,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="using:KyroClient.Desktop.Main.ViewModels"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
         x:Class="KyroClient.Desktop.Main.Views.MainWindow"
         x:DataType="viewModels:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
+        xmlns:sidebar="using:KyroClient.Desktop.Sidebar.Views"
+        Width="1400"
+        Height="900"
+        Background="#1E1F22"
+        ExtendClientAreaToDecorationsHint="True"
         Title="KyroClient.Desktop">
+    <!-- ExtendClientAreaChromeHints="NoChrome" -->
+    <!-- Icon="/Assets/avalonia-logo.ico" -->
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <viewModels:MainWindowViewModel/>
+        <viewModels:MainWindowViewModel />
     </Design.DataContext>
     
+    <DockPanel>
+        <sidebar:SidebarView DockPanel.Dock="Left"/>
+    </DockPanel>
+
 </Window>

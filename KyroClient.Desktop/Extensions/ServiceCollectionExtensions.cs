@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using KyroClient.PostgreSql;
 using Microsoft.Extensions.DependencyInjection;
 
