@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Material.Icons.Avalonia;
@@ -12,7 +13,9 @@ public partial class SidebarView : UserControl
     public SidebarView()
     {
         InitializeComponent();
-        ShowPanel("Connections");
+        // ShowPanel("Connections");
+        PanelContainer.IsVisible = false;
+        IsPanelOpen = false;
     }
 
     private void OnIconClick(object? sender, RoutedEventArgs e)
@@ -20,6 +23,12 @@ public partial class SidebarView : UserControl
         if (sender is not Button btn) return;
         var tag = btn.Tag?.ToString();
         if (tag == null) return;
+
+        if (tag == _activePanel)
+        {
+            _activePanel = null;
+            return;
+        }
 
         if (_activePanel == tag)
         {
@@ -33,26 +42,37 @@ public partial class SidebarView : UserControl
         }
     }
 
+    public static readonly StyledProperty<bool> IsPanelOpenProperty =
+        AvaloniaProperty.Register<SidebarView, bool>(nameof(IsPanelOpen), defaultValue: true);
+
+    public bool IsPanelOpen
+    {
+        get => GetValue(IsPanelOpenProperty);
+        set => SetValue(IsPanelOpenProperty, value);
+    }
+
     private void OnClosePanel(object? sender, RoutedEventArgs e)
     {
         PanelContainer.IsVisible = false;
         _activePanel = null;
+        IsPanelOpen = false;
         SetActiveButton(null);
     }
 
     private void ShowPanel(string panelName)
     {
         _activePanel = panelName;
+        IsPanelOpen = true;
         PanelContainer.IsVisible = true;
         PanelTitle.Text = panelName switch
         {
             "Connections" => "Connections",
-            "SwitchDb"    => "Switch Database",
-            "Settings"    => "Settings",
-            _             => panelName
+            "SwitchDb" => "Switch Database",
+            "Settings" => "Settings",
+            _ => panelName
         };
         SetActiveButton(panelName);
-        PanelContent.Children.Clear(); // content wired up later
+        PanelContent.Children.Clear();
     }
 
     private void SetActiveButton(string? tag)
@@ -68,9 +88,9 @@ public partial class SidebarView : UserControl
         var active = tag switch
         {
             "Connections" => (BtnConnections, (MaterialIcon)BtnConnections.Content!),
-            "SwitchDb"    => (BtnSwitchDb,    (MaterialIcon)BtnSwitchDb.Content!),
-            "Settings"    => (BtnSettings,    (MaterialIcon)BtnSettings.Content!),
-            _             => ((Button?)null,  (MaterialIcon?)null)
+            "SwitchDb" => (BtnSwitchDb, (MaterialIcon)BtnSwitchDb.Content!),
+            "Settings" => (BtnSettings, (MaterialIcon)BtnSettings.Content!),
+            _ => ((Button?)null, (MaterialIcon?)null)
         };
 
         if (active.Item1 == null) return;
@@ -81,7 +101,7 @@ public partial class SidebarView : UserControl
     private IEnumerable<(Button, MaterialIcon)> Buttons()
     {
         yield return (BtnConnections, (MaterialIcon)BtnConnections.Content!);
-        yield return (BtnSwitchDb,    (MaterialIcon)BtnSwitchDb.Content!);
-        yield return (BtnSettings,    (MaterialIcon)BtnSettings.Content!);
+        yield return (BtnSwitchDb, (MaterialIcon)BtnSwitchDb.Content!);
+        yield return (BtnSettings, (MaterialIcon)BtnSettings.Content!);
     }
 }
