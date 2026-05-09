@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace KyroClient.Desktop.Views;
+namespace KyroClient.Desktop.Main.Views;
 
 public partial class MainWindow : Window
 {

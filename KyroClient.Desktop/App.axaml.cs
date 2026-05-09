@@ -2,8 +2,8 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using KyroClient.Desktop.Extensions;
-using KyroClient.Desktop.ViewModels;
-using KyroClient.Desktop.Views;
+using KyroClient.Desktop.Main.ViewModels;
+using KyroClient.Desktop.Main.Views;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace KyroClient.Desktop;
