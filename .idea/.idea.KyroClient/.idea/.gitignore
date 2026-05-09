@@ -1,0 +1,70 @@
+# Build
+bin/
+obj/
+
+# Rider
+.idea/
+
+# VSCode
+.vscode/
+
+# Visual Studio
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+
+# Publish
+publish/
+
+# Test Results
+TestResults/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Avalonia previewer
+*.axaml.g.cs
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temp files
+tmp/
+temp/
+
+# Coverage
+coverage/
+coverage-report/
+
+# Secrets
+appsettings.Development.json
+secrets.json
+
+# JetBrains
+_ReSharper*/
+*.DotSettings.user
+
+# Node (se tiver frontend/assets)
+node_modules/
+
+# Generated files
+Generated/
+
+# Docker
+docker-compose.override.yml
+
+# Dumps
+*.dmp
