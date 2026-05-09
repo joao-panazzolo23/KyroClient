@@ -52,6 +52,16 @@
             "related": ".xml"
           }
         }
+      },
+      "KyroClient.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/KyroClient.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KyroClient.Core.dll": {}
+        }
       }
     }
   },
@@ -177,10 +187,16 @@
         "npgsql.nuspec",
         "postgresql.png"
       ]
+    },
+    "KyroClient.Core/1.0.0": {
+      "type": "project",
+      "path": "../KyroClient.Core/KyroClient.Core.csproj",
+      "msbuildProject": "../KyroClient.Core/KyroClient.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "KyroClient.Core >= 1.0.0",
       "Npgsql >= 10.0.2"
     ]
   },
@@ -209,7 +225,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/john/RiderProjects/KyroClient/KyroClient.Core/KyroClient.Core.csproj": {
+              "projectPath": "/home/john/RiderProjects/KyroClient/KyroClient.Core/KyroClient.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
