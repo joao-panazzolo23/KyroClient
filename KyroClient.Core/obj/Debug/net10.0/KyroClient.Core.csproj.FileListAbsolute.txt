@@ -1,0 +1,12 @@
+/home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.deps.json
+/home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfoInputs.cache
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfo.cs
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.csproj.CoreCompileInputs.cache
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.sourcelink.json
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/refint/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/ref/KyroClient.Core.dll

@@ -24,10 +24,13 @@
 /home/john/.nuget/packages/avaloniaui.diagnosticssupport/2.2.1/lib/net10.0/AvaloniaUI.DiagnosticsSupport.Avalonia.dll
 /home/john/.nuget/packages/communitytoolkit.mvvm/8.4.1/lib/net8.0/CommunityToolkit.Mvvm.dll
 /home/john/.nuget/packages/harfbuzzsharp/8.3.1.3/lib/net8.0/HarfBuzzSharp.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Core/obj/Debug/net10.0/ref/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/ref/KyroClient.PostgreSql.dll
 /home/john/.nuget/packages/microcom.runtime/0.11.4/lib/net5.0/MicroCom.Runtime.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/Microsoft.CSharp.dll
-/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
-/home/john/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.6/lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/john/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.6/lib/net10.0/Microsoft.Extensions.DependencyInjection.dll
+/home/john/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/john/.nuget/packages/microsoft.io.recyclablememorystream/3.0.1/lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/Microsoft.VisualBasic.Core.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/Microsoft.VisualBasic.dll
@@ -35,6 +38,7 @@
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/Microsoft.Win32.Registry.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/mscorlib.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/netstandard.dll
+/home/john/.nuget/packages/npgsql/10.0.2/lib/net10.0/Npgsql.dll
 /home/john/.nuget/packages/skiasharp/3.119.4-preview.1.1/ref/net10.0/SkiaSharp.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/System.AppContext.dll
 /home/john/.dotnet/packs/Microsoft.NETCore.App.Ref/10.0.7/ref/net10.0/System.Buffers.dll

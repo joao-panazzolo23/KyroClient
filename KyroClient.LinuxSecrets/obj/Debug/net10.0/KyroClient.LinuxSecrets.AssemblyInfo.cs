@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyroClient.LinuxSecrets")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67686741ead660bd630d0c775091d9e206b5e11f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69fd3d07e1fec6305839cec4e71bd3e15a81863b")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyroClient.LinuxSecrets")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyroClient.LinuxSecrets")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

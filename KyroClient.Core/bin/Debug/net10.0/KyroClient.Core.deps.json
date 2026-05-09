@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "KyroClient.Core/1.0.0": {
+        "runtime": {
+          "KyroClient.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KyroClient.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

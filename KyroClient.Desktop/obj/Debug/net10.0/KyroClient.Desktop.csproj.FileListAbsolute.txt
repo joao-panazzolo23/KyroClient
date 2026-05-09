@@ -91,3 +91,9 @@
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.genruntimeconfig.cache
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/ref/KyroClient.Desktop.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.sourcelink.json
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Npgsql.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.PostgreSql.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.PostgreSql.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.pdb

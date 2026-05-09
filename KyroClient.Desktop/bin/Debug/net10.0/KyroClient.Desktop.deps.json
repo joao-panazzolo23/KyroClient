@@ -13,7 +13,9 @@
           "Avalonia.Fonts.Inter": "12.0.2",
           "Avalonia.Themes.Fluent": "12.0.2",
           "AvaloniaUI.DiagnosticsSupport": "2.2.1",
-          "CommunityToolkit.Mvvm": "8.4.1"
+          "CommunityToolkit.Mvvm": "8.4.1",
+          "KyroClient.PostgreSql": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "10.0.6"
         },
         "runtime": {
           "KyroClient.Desktop.dll": {}
@@ -237,7 +239,7 @@
       },
       "AvaloniaUI.DiagnosticsSupport/2.2.1": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.IO.RecyclableMemoryStream": "3.0.1"
         },
         "runtime": {
@@ -377,22 +379,33 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "Microsoft.Extensions.DependencyInjection/10.0.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.6"
+        },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.626.17701"
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.6": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.6"
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+          "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
           }
         }
       },
@@ -401,6 +414,17 @@
           "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
             "assemblyVersion": "3.0.1.0",
             "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "Npgsql/10.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.dll": {
+            "assemblyVersion": "10.0.2.0",
+            "fileVersion": "10.0.2.0"
           }
         }
       },
@@ -533,6 +557,26 @@
           "lib/net9.0/Tmds.DBus.Protocol.dll": {
             "assemblyVersion": "0.92.0.0",
             "fileVersion": "0.92.0.0"
+          }
+        }
+      },
+      "KyroClient.Core/1.0.0": {
+        "runtime": {
+          "KyroClient.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KyroClient.PostgreSql/1.0.0": {
+        "dependencies": {
+          "KyroClient.Core": "1.0.0",
+          "Npgsql": "10.0.2"
+        },
+        "runtime": {
+          "KyroClient.PostgreSql.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -684,19 +728,26 @@
       "path": "microcom.runtime/0.11.4",
       "hashPath": "microcom.runtime.0.11.4.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+    "Microsoft.Extensions.DependencyInjection/10.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-poUvwtf92bEs8uBH3aRRs/ZgiAw+Z485EU7TtVPBt//MmD0uMPERe7+v3Ur7lpD8XgIEDL9sDoTBcW1LMG97CQ==",
+      "path": "microsoft.extensions.dependencyinjection/10.0.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.10.0.6.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-w+dX4SIr1X9yegX2yX2dU1XtP4JAUVNdvOG/Evn+H+ndn96YzfIPX52FALXChrRNWFR9l77FQyg1mB7WQo6iOA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==",
+      "path": "microsoft.extensions.logging.abstractions/10.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
     },
     "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
       "type": "package",
@@ -704,6 +755,13 @@
       "sha512": "sha512-s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
       "path": "microsoft.io.recyclablememorystream/3.0.1",
       "hashPath": "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512"
+    },
+    "Npgsql/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q5RfBI+wywJSFUNDE1L4ZbHEHCFTblo8Uf6A6oe4feOUFYiUQXyAf9GBh5qEZpvJaHiEbpBPkQumjEhXCJxdrg==",
+      "path": "npgsql/10.0.2",
+      "hashPath": "npgsql.10.0.2.nupkg.sha512"
     },
     "SkiaSharp/3.119.4-preview.1.1": {
       "type": "package",
@@ -739,6 +797,16 @@
       "sha512": "sha512-h7IMakm0PF2jxiagoysoAjrzzLQ0UBdnSXQL5kb17YW0Fvyo12Tg96A99QkzwktWRrd7H+Uw9EzjasNLUfGYlA==",
       "path": "tmds.dbus.protocol/0.92.0",
       "hashPath": "tmds.dbus.protocol.0.92.0.nupkg.sha512"
+    },
+    "KyroClient.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KyroClient.PostgreSql/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

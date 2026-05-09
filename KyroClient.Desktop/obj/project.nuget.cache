@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c77YLGa8ZUU=",
+  "dgSpecHash": "sa4jQHYxvuM=",
   "success": true,
   "projectFilePath": "/home/john/RiderProjects/KyroClient/KyroClient.Desktop/KyroClient.Desktop.csproj",
   "expectedPackageFiles": [
@@ -26,9 +26,11 @@
     "/home/john/.nuget/packages/harfbuzzsharp.nativeassets.webassembly/8.3.1.3/harfbuzzsharp.nativeassets.webassembly.8.3.1.3.nupkg.sha512",
     "/home/john/.nuget/packages/harfbuzzsharp.nativeassets.win32/8.3.1.3/harfbuzzsharp.nativeassets.win32.8.3.1.3.nupkg.sha512",
     "/home/john/.nuget/packages/microcom.runtime/0.11.4/microcom.runtime.0.11.4.nupkg.sha512",
-    "/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/home/john/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/john/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.6/microsoft.extensions.dependencyinjection.10.0.6.nupkg.sha512",
+    "/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.6/microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512",
+    "/home/john/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
     "/home/john/.nuget/packages/microsoft.io.recyclablememorystream/3.0.1/microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+    "/home/john/.nuget/packages/npgsql/10.0.2/npgsql.10.0.2.nupkg.sha512",
     "/home/john/.nuget/packages/skiasharp/3.119.4-preview.1.1/skiasharp.3.119.4-preview.1.1.nupkg.sha512",
     "/home/john/.nuget/packages/skiasharp.nativeassets.linux/3.119.4-preview.1.1/skiasharp.nativeassets.linux.3.119.4-preview.1.1.nupkg.sha512",
     "/home/john/.nuget/packages/skiasharp.nativeassets.macos/3.119.4-preview.1.1/skiasharp.nativeassets.macos.3.119.4-preview.1.1.nupkg.sha512",

@@ -1,0 +1,16 @@
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.deps.json
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.dll
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.dll
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.csproj.AssemblyReference.cache
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.GeneratedMSBuildEditorConfig.editorconfig
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfoInputs.cache
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfo.cs
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.csproj.CoreCompileInputs.cache
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.sourcelink.json
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClie.6FF36F88.Up2Date
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.dll
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/refint/KyroClient.PostgreSql.dll
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.pdb
+/home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/ref/KyroClient.PostgreSql.dll
