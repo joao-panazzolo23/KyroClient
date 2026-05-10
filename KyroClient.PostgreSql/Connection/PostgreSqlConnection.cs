@@ -1,4 +1,5 @@
 using System.Data;
+using System.Data.Common;
 using KyroClient.Core.Connection.Services;
 using KyroClient.Core.Connection.Strategies;
 using Npgsql;
@@ -11,12 +12,34 @@ public class PostgreSqlConnection : IDatabaseConnection
     IConnectionOptions IDatabaseConnection.Options { get; }
     ConnectionState IDatabaseConnection.State { get; }
 
-    public PostgreSqlConnection(IConnectionOptions options)
+
+    // IConnectionOptions options
+    public PostgreSqlConnection()
     {
-        //TODO: REMOVE HARDCODE 
-        Conn = new NpgsqlConnection(
-            "Host=localhost;Port=5432;Database=breadboard;Username=postgres;Password=postgres;"
+        ///TODO: REMOVE HARDCODE
+        var options = new IConnectionOptions(
+            "localhost",
+            "5432",
+            "postgres",
+            "postgres",
+            "postgres"
         );
+
+        CreateConnection(options);
+        OpenAsync();
+    }
+
+    private DbConnection CreateConnection(IConnectionOptions options)
+    {
+        var builder = new NpgsqlConnectionStringBuilder
+        {
+            Host = options.Host,
+            Port = int.Parse(options.Port),
+            Database = options.Database,
+            Username = options.Username,
+            Password = options.Password,
+        };
+        return new NpgsqlConnection(builder.ConnectionString);
     }
 
     public Task OpenAsync(CancellationToken ct = default)

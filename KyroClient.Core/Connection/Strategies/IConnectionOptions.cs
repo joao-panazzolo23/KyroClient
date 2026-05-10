@@ -1,11 +1,9 @@
 namespace KyroClient.Core.Connection.Strategies;
 
-public interface IConnectionOptions
-{
-    string Host { get; }
-    string Port { get; }
-    string Database { get; }
-    string Username { get; }
-    string? Password { get; }
-    string ToDisplayString();
-}
+public record IConnectionOptions(
+    string Host,
+    string Port,
+    string Database,
+    string Username,
+    string? Password
+);

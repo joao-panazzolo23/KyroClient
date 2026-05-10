@@ -1,13 +1,18 @@
 using Avalonia.Controls;
+using KyroClient.Desktop.Main.ViewModels;
 using KyroClient.Desktop.Sidebar.Views;
 
 namespace KyroClient.Desktop.Main.Views;
 
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    public MainWindow(MainWindowViewModel viewModel)
     {
         InitializeComponent();
+        DataContext = viewModel;
+        viewModel.LoadDatabasesCommand.ExecuteAsync(null);
+        // viewModel.LoadTablesCommand.ExecuteAsync(null);
+        
         var sidebar = this.FindControl<SidebarView>("Sidebar")!;
 
         sidebar.PropertyChanged += (_, e) =>

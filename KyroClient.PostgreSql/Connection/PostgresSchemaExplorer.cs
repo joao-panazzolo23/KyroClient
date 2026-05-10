@@ -6,7 +6,7 @@ using Npgsql;
 
 namespace KyroClient.PostgreSql.Connection;
 
-public class PostgresSchemaExplorer(IDbConnection connection) : ISchemaExplorer
+public class PostgresSchemaExplorer(NpgsqlConnection connection) : ISchemaExplorer, IDisposable, IAsyncDisposable
 {
     public async Task<IReadOnlyList<DatabaseInfo>> GetDatabases(CancellationToken ct = default)
     {
@@ -20,9 +20,12 @@ public class PostgresSchemaExplorer(IDbConnection connection) : ISchemaExplorer
                            WHERE d.datistemplate = false
                            ORDER BY d.datname;
                            """;
+        if (connection.State != ConnectionState.Open)
+            await connection.OpenAsync(ct);
+
         try
         {
-            await using var cmd = (NpgsqlCommand)connection.CreateCommand();
+            await using var cmd = connection.CreateCommand();
 
             cmd.CommandText = sql;
 
@@ -47,49 +50,83 @@ public class PostgresSchemaExplorer(IDbConnection connection) : ISchemaExplorer
 
     public async Task<IReadOnlyList<TableInfo>> GetTables(string database, CancellationToken ct = default)
     {
+        //todo: remove hardcode, create new Connection string, etc...
+        var connStr = $"Host=localhost;Port=5432;Username=postgres;Password=postgres;Database={database}";
+        await using var dbConn = new NpgsqlConnection(connStr);
+        await dbConn.OpenAsync(CancellationToken.None);
+        Console.WriteLine($"Connected to: {dbConn.Database}");
+
         const string sql = """
-                           SELECT
-                               t.table_schema,
-                               t.table_name,
-                               t.table_type,
-                               c.reltuples::bigint AS row_estimate
+                           SELECT t.table_schema, t.table_name, t.table_type
                            FROM information_schema.tables t
-                           JOIN pg_catalog.pg_class c ON c.relname = t.table_name
-                           JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace AND n.nspname = t.table_schema
                            WHERE t.table_schema NOT IN ('pg_catalog', 'information_schema')
                            ORDER BY t.table_schema, t.table_name;
                            """;
-        try
-        {
-            await using var cmd = (NpgsqlCommand)connection.CreateCommand();
-            cmd.CommandText = sql;
 
-            await using var reader = await cmd.ExecuteReaderAsync(ct);
-            var result = new List<TableInfo>();
-            while (await reader.ReadAsync(ct))
-                result.Add(new TableInfo
-                {
-                    Schema = reader.GetString(0),
-                    Name = reader.GetString(1),
-                    Kind = reader.GetString(2) == "VIEW" ? TableKind.View : TableKind.Table,
-                    RowEstimate = reader.IsDBNull(3) ? null : reader.GetInt64(3),
-                });
+        await using var cmd = new NpgsqlCommand(sql, dbConn);
+        await using var reader = await cmd.ExecuteReaderAsync(CancellationToken.None);
 
-            return result;
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
+        var result = new List<TableInfo>();
+        while (await reader.ReadAsync(CancellationToken.None))
+            result.Add(new TableInfo
+            {
+                Schema = reader.GetString(0),
+                Name = reader.GetString(1),
+                Kind = reader.GetString(2) == "VIEW" ? TableKind.View : TableKind.Table
+            });
+
+        return result;
     }
-    
+
+    // public async Task<IReadOnlyList<TableInfo>> GetTables(string database, CancellationToken ct = default)
+    // {
+    //     if (connection.State != ConnectionState.Open)
+    //         await connection.OpenAsync(ct);
+    //
+    //     const string sql = """
+    //                        SELECT
+    //                            t.table_schema,
+    //                            t.table_name,
+    //                            t.table_type
+    //                        FROM information_schema.tables t
+    //                        JOIN pg_catalog.pg_class c ON c.relname = t.table_name
+    //                        JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace AND n.nspname = t.table_schema
+    //                        WHERE t.table_schema NOT IN ('pg_catalog', 'information_schema')
+    //                        ORDER BY t.table_schema, t.table_name;
+    //                        """;
+    //     try
+    //     {
+    //         await using var cmd = connection.CreateCommand();
+    //         cmd.CommandText = sql;
+    //
+    //         await using var reader = await cmd.ExecuteReaderAsync(ct);
+    //         var result = new List<TableInfo>();
+    //         while (await reader.ReadAsync(ct))
+    //             result.Add(new TableInfo
+    //             {
+    //                 Schema = reader.GetString(0),
+    //                 Name = reader.GetString(1),
+    //                 Kind = reader.GetString(2) == "VIEW" ? TableKind.View : TableKind.Table
+    //             });
+    //
+    //         return result;
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Console.WriteLine(e);
+    //         throw;
+    //     }
+    // }
+
     public async Task<IReadOnlyList<ColumnInfo>> GetColumns(
         string database,
         string table,
         CancellationToken ct = default
     )
     {
+        if (connection.State != ConnectionState.Open)
+            await connection.OpenAsync(ct);
+
         const string sql = """
                            SELECT
                                c.column_name,
@@ -112,11 +149,13 @@ public class PostgresSchemaExplorer(IDbConnection connection) : ISchemaExplorer
                              AND c.table_schema NOT IN ('pg_catalog', 'information_schema')
                            ORDER BY c.ordinal_position;
                            """;
+        //todo: find a better way to open connections. that sucks.
+        if (connection.State != ConnectionState.Open)
+            await connection.OpenAsync(ct);
 
-        // await connection.OpenAsync(ct);
         try
         {
-            await using var cmd = (NpgsqlCommand)connection.CreateCommand();
+            await using var cmd = connection.CreateCommand();
             cmd.CommandText = sql;
             cmd.Parameters.AddWithValue("table", table);
 
@@ -138,6 +177,11 @@ public class PostgresSchemaExplorer(IDbConnection connection) : ISchemaExplorer
         catch
         {
         }
+
         return null;
     }
+
+    public void Dispose() => connection.Dispose();
+
+    public async ValueTask DisposeAsync() => await connection.DisposeAsync();
 }

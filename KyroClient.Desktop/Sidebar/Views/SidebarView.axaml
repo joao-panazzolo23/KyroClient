@@ -44,7 +44,6 @@
                 </StackPanel>
 
                 <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" Margin="0,0,0,8">
-
                     <Button Classes="sidebar-icon"
                             x:Name="BtnSettings"
                             ToolTip.Tip="Settings"
@@ -53,7 +52,6 @@
                         <material:MaterialIcon Kind="Cog"
                                                Width="20" Height="20" />
                     </Button>
-
                 </StackPanel>
 
             </DockPanel>
