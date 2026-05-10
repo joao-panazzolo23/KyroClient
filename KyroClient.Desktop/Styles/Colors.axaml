@@ -1,0 +1,20 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="SidebarBg">#1E1F22</Color>
+    <Color x:Key="IconStripBg">#2B2D30</Color>
+    <Color x:Key="AccentBlue">#4D8CC8</Color>
+    <Color x:Key="FgMuted">#7A7E85</Color>
+    <Color x:Key="FgDefault">#BCBEC4</Color>
+    <Color x:Key="FgActive">#FFFFFF</Color>
+    <Color x:Key="Separator">#3C3F41</Color>
+
+    <SolidColorBrush x:Key="SidebarBgBrush" Color="{StaticResource SidebarBg}" />
+    <SolidColorBrush x:Key="IconStripBgBrush" Color="{StaticResource IconStripBg}" />
+    <SolidColorBrush x:Key="AccentBlueBrush" Color="{StaticResource AccentBlue}" />
+    <SolidColorBrush x:Key="FgMutedBrush" Color="{StaticResource FgMuted}" />
+    <SolidColorBrush x:Key="FgDefaultBrush" Color="{StaticResource FgDefault}" />
+    <SolidColorBrush x:Key="FgActiveBrush" Color="{StaticResource FgActive}" />
+    <SolidColorBrush x:Key="SeparatorBrush" Color="{StaticResource Separator}" />
+
+</ResourceDictionary>

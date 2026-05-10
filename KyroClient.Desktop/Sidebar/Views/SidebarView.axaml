@@ -11,45 +11,6 @@
              x:Class="KyroClient.Desktop.Sidebar.Views.SidebarView"
              x:Name="Self">
 
-    <UserControl.Resources>
-        <Color x:Key="SidebarBg">#1E1F22</Color>
-        <Color x:Key="IconStripBg">#2B2D30</Color>
-        <Color x:Key="AccentBlue">#4D8CC8</Color>
-        <Color x:Key="FgMuted">#7A7E85</Color>
-        <Color x:Key="FgDefault">#BCBEC4</Color>
-        <Color x:Key="FgActive">#FFFFFF</Color>
-        <Color x:Key="Separator">#3C3F41</Color>
-
-        <SolidColorBrush x:Key="SidebarBgBrush" Color="{StaticResource SidebarBg}" />
-        <SolidColorBrush x:Key="IconStripBgBrush" Color="{StaticResource IconStripBg}" />
-        <SolidColorBrush x:Key="AccentBlueBrush" Color="{StaticResource AccentBlue}" />
-        <SolidColorBrush x:Key="FgMutedBrush" Color="{StaticResource FgMuted}" />
-        <SolidColorBrush x:Key="FgDefaultBrush" Color="{StaticResource FgDefault}" />
-        <SolidColorBrush x:Key="FgActiveBrush" Color="{StaticResource FgActive}" />
-        <SolidColorBrush x:Key="SeparatorBrush" Color="{StaticResource Separator}" />
-    </UserControl.Resources>
-
-    <UserControl.Styles>
-        <Style Selector="Button.sidebar-icon">
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Width" Value="40" />
-            <Setter Property="Height" Value="40" />
-            <Setter Property="Padding" Value="0" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="HorizontalContentAlignment" Value="Center" />
-            <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="CornerRadius" Value="6" />
-            <Setter Property="Margin" Value="4,2" />
-        </Style>
-        <Style Selector="Button.sidebar-icon:pointerover /template/ ContentPresenter">
-            <Setter Property="Background" Value="#3C3F41" />
-        </Style>
-        <Style Selector="Button.sidebar-icon.active /template/ ContentPresenter">
-            <Setter Property="Background" Value="#2D3A4A" />
-        </Style>
-    </UserControl.Styles>
-
     <DockPanel Background="{StaticResource SidebarBgBrush}">
 
         <!-- Icon Strip -->

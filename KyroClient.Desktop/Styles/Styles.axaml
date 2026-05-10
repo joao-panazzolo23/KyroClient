@@ -1,0 +1,23 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="Button.sidebar-icon">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Width" Value="40" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="Margin" Value="4,2" />
+    </Style>
+    <Style Selector="Button.sidebar-icon:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="#3C3F41" />
+    </Style>
+    <Style Selector="Button.sidebar-icon.active /template/ ContentPresenter">
+        <Setter Property="Background" Value="#2D3A4A" />
+    </Style>
+
+</Styles>

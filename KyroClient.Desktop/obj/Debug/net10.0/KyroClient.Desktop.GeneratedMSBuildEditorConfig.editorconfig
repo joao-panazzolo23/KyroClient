@@ -42,3 +42,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Sidebar/Views/SidebarView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Styles/Colors.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Styles/Styles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
