@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace KyroClient.Desktop.Main.ViewModels;
+namespace KyroClient.Desktop;
 
 public abstract class ViewModelBase : ObservableObject
 {

@@ -1,9 +1,10 @@
+using System.Data;
+
 namespace KyroClient.Core.Connection.Models;
 
-public sealed record QueryResultSet
+public abstract record QueryResult
 {
-    public required IReadOnlyList<ColumnDefinition> Columns { get; init; }
-    public required IAsyncEnumerable<IReadOnlyList<object?>> Rows { get; init; }
-    public int? RowsAffected { get; init; }
-    public TimeSpan Elapsed { get; init; }
+    public record Rows(DataTable Table, TimeSpan Elapsed) : QueryResult;
+    public record RowsAffected(int Count, TimeSpan Elapsed) : QueryResult;
+    public record Failed(string Message) : QueryResult;
 }

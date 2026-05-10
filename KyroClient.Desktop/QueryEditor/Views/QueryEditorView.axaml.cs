@@ -14,9 +14,8 @@ public partial class QueryEditorView : UserControl
     private void SetupSqlHighlighting()
     {
         // load built-in SQL highlighting — AvaloniaEdit ships with it
+        //not working rn. need to see this later
         Editor.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("SQL");
-
-        // optional tweaks
         Editor.Options.EnableHyperlinks = false;
         Editor.Options.EnableEmailHyperlinks = false;
         Editor.Options.ShowBoxForControlCharacters = true;

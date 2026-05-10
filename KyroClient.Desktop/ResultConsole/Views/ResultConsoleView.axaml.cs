@@ -8,7 +8,12 @@ namespace KyroClient.Desktop.ResultConsole.Views;
 
 public partial class ResultConsoleView : UserControl
 {
-  public void ShowResults(DataTable table, TimeSpan elapsed)
+    public ResultConsoleView()
+    {
+        InitializeComponent();
+    }
+
+    public void ShowResults(DataTable table, TimeSpan elapsed)
     {
         ResultsGrid.Columns.Clear();
 
@@ -54,14 +59,14 @@ public partial class ResultConsoleView : UserControl
         panel.Children.Add(new TextBlock
         {
             Text = name,
-            Foreground = new SolidColorBrush(Avalonia.Media.Color.Parse("#BCBEC4")),
+            Foreground = new SolidColorBrush(Color.Parse("#BCBEC4")),
             FontWeight = FontWeight.SemiBold,
         });
 
         panel.Children.Add(new TextBlock
         {
             Text = typeName,
-            Foreground = new SolidColorBrush(Avalonia.Media.Color.Parse("#4D8CC8")),
+            Foreground = new SolidColorBrush(Color.Parse("#4D8CC8")),
             FontSize = 10,
             VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
         });
@@ -78,6 +83,7 @@ public partial class ResultConsoleView : UserControl
         return panel;
     }
 
+    //todo: refactor
     private static string MapTypeName(Type type) => type switch
     {
         _ when type == typeof(int) || type == typeof(long) || type == typeof(short) => "int",
@@ -91,7 +97,7 @@ public partial class ResultConsoleView : UserControl
     };
 }
 
-// wrapper so DataGrid can bind by column index
+// todo: new file, maybe rewrite
 public class DataRowWrapper(DataRow row)
 {
     public object? this[int index] => row[index] is DBNull ? null : row[index];

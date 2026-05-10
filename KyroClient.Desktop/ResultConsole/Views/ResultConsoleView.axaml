@@ -2,12 +2,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:KyroClient.Desktop.Main.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="KyroClient.Desktop.ResultConsole.Views.ResultConsoleView">
+             x:Class="KyroClient.Desktop.ResultConsole.Views.ResultConsoleView"
+             x:DataType="viewModels:MainWindowViewModel">
+
+
     <Border Background="#1E1F22"
             BorderThickness="0,1,0,0"
             BorderBrush="#3C3F41">
         <DockPanel>
+
+            <!-- Toolbar -->
+            <Border DockPanel.Dock="Top"
+                    Background="#2B2D30"
+                    BorderThickness="0,0,0,1"
+                    BorderBrush="#3C3F41"
+                    Height="36">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="12"
+                            VerticalAlignment="Center"
+                            Margin="12,0">
+
+                    <!-- Play button -->
+                    <!-- TODO: MAKE A BETTER PLAY BUTTON -->
+                    <Button Width="24" Height="24"
+                            CornerRadius="5"
+                            ToolTip.Tip="Run query"
+                            Command="{Binding ExecuteQueryCommand}">
+                        <Button.Styles>
+                            <Style Selector="Button">
+                                <Setter Property="Background" Value="#1B3A25" />
+                                <Setter Property="BorderBrush" Value="#3A8A52" />
+                                <Setter Property="BorderThickness" Value="1" />
+                            </Style>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#2D6A3F" />
+                            </Style>
+                        </Button.Styles>
+                        <PathIcon Width="10" Height="10"
+                                  Data="M 1,0 L 10,5 L 1,10 Z"
+                                  Foreground="#4CAF76" />
+                    </Button>
+
+                    <!-- Divider -->
+                    <Border Width="1"
+                            Height="20"
+                            Background="#3C3F41" />
+
+                    <!-- Commit mode toggle -->
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="8"
+                                VerticalAlignment="Center">
+                        <TextBlock Text="manual"
+                                   FontSize="14"
+                                   Foreground="#7A7E85"
+                                   VerticalAlignment="Center" />
+                        <ToggleSwitch OnContent=""
+                                      OffContent=""
+                                      Margin="0"
+                                      Padding="0"
+                                      MinWidth="0" />
+                        <TextBlock Text="auto"
+                                   FontSize="14"
+                                   Foreground="#7A7E85"
+                                   VerticalAlignment="Center" />
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
 
             <!-- Status bar -->
             <Border DockPanel.Dock="Bottom"
@@ -17,9 +80,10 @@
                     BorderBrush="#3C3F41">
                 <DockPanel>
                     <TextBlock x:Name="RowCountText"
-                               Text="0 rows"
+                               Text="FIX IT rows"
                                FontSize="11"
-                               Foreground="#7A7E85" />
+                               Foreground="#7A7E85"
+                               />
                     <TextBlock x:Name="ElapsedText"
                                Text=""
                                FontSize="11"
@@ -28,7 +92,6 @@
                 </DockPanel>
             </Border>
 
-            <!-- Results grid -->
             <DataGrid x:Name="ResultsGrid"
                       Background="#1E1F22"
                       RowBackground="#1E1F22"
@@ -40,12 +103,13 @@
                       CanUserResizeColumns="True"
                       CanUserSortColumns="True"
                       IsReadOnly="True"
-                      AutoGenerateColumns="False"
+                      AutoGenerateColumns="True"
                       FontSize="12"
                       FontFamily="JetBrains Mono, Cascadia Code, Consolas, monospace"
                       Foreground="#BCBEC4"
-                      HeadersVisibility="Column" />
-            <!-- AlternatingRowBackground="#212224" -->
+                      HeadersVisibility="Column"
+                      ItemsSource="{Binding QueryResults.ResultTable}" />
+
         </DockPanel>
     </Border>
 </UserControl>

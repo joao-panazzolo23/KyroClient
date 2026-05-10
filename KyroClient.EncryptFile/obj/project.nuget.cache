@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "MrOhfUmWnHE=",
+  "dgSpecHash": "o06CYO5wVtU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\equip\\OneDrive\\Desktop\\apresentacao DDD\\KyroClient\\KyroClient.EncryptFile\\KyroClient.EncryptFile.csproj",
+  "projectFilePath": "/home/john/RiderProjects/KyroClient/KyroClient.EncryptFile/KyroClient.EncryptFile.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\equip\\.nuget\\packages\\avalonia\\12.0.0\\avalonia.12.0.0.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\avalonia.buildservices\\11.3.2\\avalonia.buildservices.11.3.2.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\avalonia.remote.protocol\\12.0.0\\avalonia.remote.protocol.12.0.0.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\material.icons\\3.0.2\\material.icons.3.0.2.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\material.icons.avalonia\\3.0.2\\material.icons.avalonia.3.0.2.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\microcom.runtime\\0.11.4\\microcom.runtime.0.11.4.nupkg.sha512",
-    "C:\\Users\\equip\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.6\\microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512"
+    "/home/john/.nuget/packages/avalonia/12.0.0/avalonia.12.0.0.nupkg.sha512",
+    "/home/john/.nuget/packages/avalonia.buildservices/11.3.2/avalonia.buildservices.11.3.2.nupkg.sha512",
+    "/home/john/.nuget/packages/avalonia.remote.protocol/12.0.0/avalonia.remote.protocol.12.0.0.nupkg.sha512",
+    "/home/john/.nuget/packages/material.icons/3.0.2/material.icons.3.0.2.nupkg.sha512",
+    "/home/john/.nuget/packages/material.icons.avalonia/3.0.2/material.icons.avalonia.3.0.2.nupkg.sha512",
+    "/home/john/.nuget/packages/microcom.runtime/0.11.4/microcom.runtime.0.11.4.nupkg.sha512",
+    "/home/john/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.6/microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512"
   ],
   "logs": []
 }
