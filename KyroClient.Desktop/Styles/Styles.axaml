@@ -1,5 +1,6 @@
 <Styles xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:material="using:Material.Icons.Avalonia">
 
     <Style Selector="Button.sidebar-icon">
         <Setter Property="Background" Value="Transparent" />
@@ -18,6 +19,13 @@
     </Style>
     <Style Selector="Button.sidebar-icon.active /template/ ContentPresenter">
         <Setter Property="Background" Value="#2D3A4A" />
+    </Style>
+
+    <Style Selector="Button.sidebar-icon material|MaterialIcon">
+        <Setter Property="Foreground" Value="#7A7E85" />
+    </Style>
+    <Style Selector="Button.sidebar-icon.active material|MaterialIcon">
+        <Setter Property="Foreground" Value="#FFFFFF" />
     </Style>
 
 </Styles>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyroClient.WindowsSecrets")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190c5b27a031155adbd8a433617f632dd536e267")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a372dc9e91a5caff9d5e8a413ffb7a53a12b7ff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyroClient.WindowsSecrets")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyroClient.WindowsSecrets")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

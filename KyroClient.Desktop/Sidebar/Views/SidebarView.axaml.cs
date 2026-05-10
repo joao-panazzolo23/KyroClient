@@ -1,8 +1,6 @@
-using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Material.Icons.Avalonia;
 
 namespace KyroClient.Desktop.Sidebar.Views;
 
@@ -69,13 +67,13 @@ public partial class SidebarView : UserControl
             _ => panelName
         };
         SetActiveButton(panelName);
-        
+
         PanelContent.Content = panelName switch
         {
             "Connections" => new ConnectionsSidebarView() { DataContext = DataContext },
-            "SwitchDb"    => new TextBlock { Text = "Coming soon" },
-            "Settings"    => new TextBlock { Text = "Coming soon" },
-            _             => null
+            "SwitchDb" => new TextBlock { Text = "Coming soon" },
+            "Settings" => new TextBlock { Text = "Coming soon" },
+            _ => null
         };
 
         // PanelContent.Children.Clear();
@@ -92,32 +90,19 @@ public partial class SidebarView : UserControl
 
     private void SetActiveButton(string? tag)
     {
-        foreach (var (btn, icon) in Buttons())
-        {
+        foreach (var btn in new[] { BtnConnections, BtnSwitchDb, BtnSettings })
             btn.Classes.Remove("active");
-            icon.Foreground = (Avalonia.Media.IBrush)Resources["FgMutedBrush"]!;
-        }
 
         if (tag == null) return;
 
         var active = tag switch
         {
-            "Connections" => (BtnConnections, (MaterialIcon)BtnConnections.Content!),
-            "SwitchDb" => (BtnSwitchDb, (MaterialIcon)BtnSwitchDb.Content!),
-            "Settings" => (BtnSettings, (MaterialIcon)BtnSettings.Content!),
-            _ => ((Button?)null, (MaterialIcon?)null)
+            "Connections" => BtnConnections,
+            "SwitchDb" => BtnSwitchDb,
+            "Settings" => BtnSettings,
+            _ => null
         };
 
-
-        if (active.Item1 == null) return;
-        active.Item1.Classes.Add("active");
-        active.Item2!.Foreground = (Avalonia.Media.IBrush)Resources["FgActiveBrush"]!;
-    }
-
-    private IEnumerable<(Button, MaterialIcon)> Buttons()
-    {
-        yield return (BtnConnections, (MaterialIcon)BtnConnections.Content!);
-        yield return (BtnSwitchDb, (MaterialIcon)BtnSwitchDb.Content!);
-        yield return (BtnSettings, (MaterialIcon)BtnSettings.Content!);
+        active?.Classes.Add("active");
     }
 }

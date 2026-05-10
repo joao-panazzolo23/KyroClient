@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7TIbAV4yGgs=",
+  "dgSpecHash": "t0bIXE4ZGa4=",
   "success": true,
   "projectFilePath": "/home/john/RiderProjects/KyroClient/KyroClient.Desktop/KyroClient.Desktop.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,6 @@
     "/home/john/.nuget/packages/skiasharp.nativeassets.macos/3.119.3-preview.1.1/skiasharp.nativeassets.macos.3.119.3-preview.1.1.nupkg.sha512",
     "/home/john/.nuget/packages/skiasharp.nativeassets.webassembly/3.119.3-preview.1.1/skiasharp.nativeassets.webassembly.3.119.3-preview.1.1.nupkg.sha512",
     "/home/john/.nuget/packages/skiasharp.nativeassets.win32/3.119.3-preview.1.1/skiasharp.nativeassets.win32.3.119.3-preview.1.1.nupkg.sha512",
-    "/home/john/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/john/.nuget/packages/tmds.dbus.protocol/0.90.3/tmds.dbus.protocol.0.90.3.nupkg.sha512"
   ],
   "logs": [

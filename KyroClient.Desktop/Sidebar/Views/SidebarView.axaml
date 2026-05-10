@@ -29,8 +29,7 @@
                             Click="OnIconClick"
                             Tag="Connections">
                         <material:MaterialIcon Kind="Database"
-                                               Width="20" Height="20"
-                                               Foreground="{StaticResource FgActiveBrush}" />
+                                               Width="20" Height="20" />
                     </Button>
 
                     <Button Classes="sidebar-icon"
@@ -39,8 +38,7 @@
                             Click="OnIconClick"
                             Tag="SwitchDb">
                         <material:MaterialIcon Kind="DatabaseArrowRight"
-                                               Width="20" Height="20"
-                                               Foreground="{StaticResource FgMutedBrush}" />
+                                               Width="20" Height="20" />
                     </Button>
 
                 </StackPanel>
@@ -53,8 +51,7 @@
                             Click="OnIconClick"
                             Tag="Settings">
                         <material:MaterialIcon Kind="Cog"
-                                               Width="20" Height="20"
-                                               Foreground="{StaticResource FgMutedBrush}" />
+                                               Width="20" Height="20" />
                     </Button>
 
                 </StackPanel>
