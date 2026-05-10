@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyroClient.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+190c5b27a031155adbd8a433617f632dd536e267")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44465fca41e4e8e12da39023a364e7b7e72947fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyroClient.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyroClient.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

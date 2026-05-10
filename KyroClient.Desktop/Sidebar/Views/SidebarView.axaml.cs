@@ -24,15 +24,11 @@ public partial class SidebarView : UserControl
         var tag = btn.Tag?.ToString();
         if (tag == null) return;
 
-        if (tag == _activePanel)
-        {
-            _activePanel = null;
-            return;
-        }
-
         if (_activePanel == tag)
         {
             PanelContainer.IsVisible = false;
+            IsPanelOpen = false;
+            IsConnectionsPanel = false;
             _activePanel = null;
             SetActiveButton(null);
         }
@@ -61,6 +57,7 @@ public partial class SidebarView : UserControl
 
     private void ShowPanel(string panelName)
     {
+        IsConnectionsPanel = panelName == "Connections";
         _activePanel = panelName;
         IsPanelOpen = true;
         PanelContainer.IsVisible = true;
@@ -72,7 +69,25 @@ public partial class SidebarView : UserControl
             _ => panelName
         };
         SetActiveButton(panelName);
-        PanelContent.Children.Clear();
+        
+        PanelContent.Content = panelName switch
+        {
+            "Connections" => new ConnectionsSidebarView() { DataContext = DataContext },
+            "SwitchDb"    => new TextBlock { Text = "Coming soon" },
+            "Settings"    => new TextBlock { Text = "Coming soon" },
+            _             => null
+        };
+
+        // PanelContent.Children.Clear();
+    }
+
+    public static readonly StyledProperty<bool> IsConnectionsPanelProperty =
+        AvaloniaProperty.Register<SidebarView, bool>(nameof(IsConnectionsPanel), defaultValue: false);
+
+    public bool IsConnectionsPanel
+    {
+        get => GetValue(IsConnectionsPanelProperty);
+        private set => SetValue(IsConnectionsPanelProperty, value);
     }
 
     private void SetActiveButton(string? tag)
@@ -92,6 +107,7 @@ public partial class SidebarView : UserControl
             "Settings" => (BtnSettings, (MaterialIcon)BtnSettings.Content!),
             _ => ((Button?)null, (MaterialIcon?)null)
         };
+
 
         if (active.Item1 == null) return;
         active.Item1.Classes.Add("active");

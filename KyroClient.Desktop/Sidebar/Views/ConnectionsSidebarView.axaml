@@ -1,0 +1,66 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:viewModels="clr-namespace:KyroClient.Desktop.Main.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KyroClient.Desktop.Sidebar.Views.ConnectionsSidebarView"
+             x:DataType="viewModels:MainWindowViewModel"
+             >
+    
+    <StackPanel Margin="0,8,0,4" Spacing="4">
+
+        <TextBlock Text="DATABASE"
+                   FontSize="10"
+                   FontWeight="SemiBold"
+                   Foreground="#7A7E85"
+                   Margin="12,0,0,4"
+                   LetterSpacing="0.8" />
+
+        <ComboBox ItemsSource="{Binding Databases}"
+                  SelectedItem="{Binding CurrentDatabase}"
+                  HorizontalAlignment="Stretch"
+                  Margin="8,0"
+                  PlaceholderText="Select database...">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" FontSize="12" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock Text="TABLES"
+                   FontSize="10"
+                   FontWeight="SemiBold"
+                   Foreground="#7A7E85"
+                   Margin="12,12,0,4"
+                   LetterSpacing="0.8"
+                   IsVisible="{Binding CurrentDatabase,
+                               Converter={x:Static ObjectConverters.IsNotNull}}" />
+
+        <ItemsControl ItemsSource="{Binding Tables}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Background="Transparent"
+                            BorderThickness="0"
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Padding="12,5"
+                            Cursor="Hand">
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <avalonia:MaterialIcon Kind="TableLarge"
+                                                   Width="14" Height="14"
+                                                   Foreground="#7A7E85" />
+                            <TextBlock Text="{Binding Name}"
+                                       FontSize="12"
+                                       Foreground="#BCBEC4" />
+                        </StackPanel>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+    </StackPanel>
+    
+</UserControl>

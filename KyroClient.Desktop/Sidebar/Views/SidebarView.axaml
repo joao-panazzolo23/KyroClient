@@ -3,10 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:material="using:Material.Icons.Avalonia"
+             xmlns:viewModels="using:KyroClient.Desktop.Main.ViewModels"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="450"
-             x:Class="KyroClient.Desktop.Sidebar.Views.SidebarView">
+             x:DataType="viewModels:MainWindowViewModel"
+             x:Class="KyroClient.Desktop.Sidebar.Views.SidebarView"
+             x:Name="Self">
 
     <UserControl.Resources>
         <Color x:Key="SidebarBg">#1E1F22</Color>
@@ -133,11 +136,9 @@
 
                 <ScrollViewer VerticalScrollBarVisibility="Auto"
                               HorizontalScrollBarVisibility="Disabled">
-                    <StackPanel x:Name="PanelContent" Margin="0,4,0,4" />
+                    <ContentControl x:Name="PanelContent" />
                 </ScrollViewer>
-
             </DockPanel>
         </Border>
-
     </DockPanel>
 </UserControl>
