@@ -37,6 +37,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/home/john/RiderProjects/KyroClient/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/john/RiderProjects/KyroClient/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/john/RiderProjects/KyroClient/KyroClient.Desktop/Sidebar/Views/ConnectionsSidebarView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -11,8 +11,7 @@ public partial class MainWindow : Window
         InitializeComponent();
         DataContext = viewModel;
         viewModel.LoadDatabasesCommand.ExecuteAsync(null);
-        // viewModel.LoadTablesCommand.ExecuteAsync(null);
-        
+
         var sidebar = this.FindControl<SidebarView>("Sidebar")!;
 
         sidebar.PropertyChanged += (_, e) =>

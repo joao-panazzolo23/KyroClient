@@ -6,9 +6,6 @@
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.AssemblyInfo.cs
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.CoreCompileInputs.cache
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.sourcelink.json
-/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.dll
-/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/refint/KyroClient.Desktop.dll
-/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.deps.json
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.runtimeconfig.json
@@ -26,6 +23,7 @@
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.Vulkan.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/AvaloniaEdit.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.Controls.DataGrid.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.Desktop.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.Fonts.Inter.dll
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/Avalonia.FreeDesktop.dll
@@ -97,5 +95,8 @@
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.PostgreSql.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClie.1CB721C0.Up2Date
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/refint/KyroClient.Desktop.dll
+/home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.genruntimeconfig.cache
 /home/john/RiderProjects/KyroClient/KyroClient.Desktop/obj/Debug/net10.0/ref/KyroClient.Desktop.dll

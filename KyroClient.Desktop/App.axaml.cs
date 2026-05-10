@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -20,7 +21,19 @@ public partial class App : Application
 
     public override void OnFrameworkInitializationCompleted()
     {
-        //todo: separate this into something else
+        var provider = BuildServiceProvider();
+
+        if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        {
+            desktop.MainWindow = provider.GetRequiredService<MainWindow>();
+        }
+
+        base.OnFrameworkInitializationCompleted();
+    }
+
+    //todo: separate this into something else
+    private IServiceProvider BuildServiceProvider()
+    {
         var collection = new ServiceCollection();
         collection.AddSingleton<MainWindowViewModel>();
         collection.AddSingleton<SidebarView>();
@@ -34,11 +47,6 @@ public partial class App : Application
         var provider = collection.BuildServiceProvider();
         Styles.Add(new MaterialIconStyles(provider));
 
-        if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
-        {
-            desktop.MainWindow = provider.GetRequiredService<MainWindow>();
-        }
-
-        base.OnFrameworkInitializationCompleted();
+        return provider;
     }
 }

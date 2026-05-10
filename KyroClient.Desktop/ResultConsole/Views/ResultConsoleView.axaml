@@ -1,0 +1,51 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KyroClient.Desktop.ResultConsole.Views.ResultConsoleView">
+    <Border Background="#1E1F22"
+            BorderThickness="0,1,0,0"
+            BorderBrush="#3C3F41">
+        <DockPanel>
+
+            <!-- Status bar -->
+            <Border DockPanel.Dock="Bottom"
+                    Background="#2B2D30"
+                    Padding="12,4"
+                    BorderThickness="0,1,0,0"
+                    BorderBrush="#3C3F41">
+                <DockPanel>
+                    <TextBlock x:Name="RowCountText"
+                               Text="0 rows"
+                               FontSize="11"
+                               Foreground="#7A7E85" />
+                    <TextBlock x:Name="ElapsedText"
+                               Text=""
+                               FontSize="11"
+                               Foreground="#7A7E85"
+                               HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+            <!-- Results grid -->
+            <DataGrid x:Name="ResultsGrid"
+                      Background="#1E1F22"
+                      RowBackground="#1E1F22"
+                      GridLinesVisibility="All"
+                      HorizontalGridLinesBrush="#2B2D30"
+                      VerticalGridLinesBrush="#2B2D30"
+                      BorderThickness="0"
+                      CanUserReorderColumns="False"
+                      CanUserResizeColumns="True"
+                      CanUserSortColumns="True"
+                      IsReadOnly="True"
+                      AutoGenerateColumns="False"
+                      FontSize="12"
+                      FontFamily="JetBrains Mono, Cascadia Code, Consolas, monospace"
+                      Foreground="#BCBEC4"
+                      HeadersVisibility="Column" />
+            <!-- AlternatingRowBackground="#212224" -->
+        </DockPanel>
+    </Border>
+</UserControl>
