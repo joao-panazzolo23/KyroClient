@@ -72,7 +72,7 @@ public partial class ResultConsoleView : UserControl
             ResultsGrid.Columns.Add(new DataGridTextColumn
             {
                 Header = BuildHeader(col.ColumnName, MapTypeName(col.DataType), col.AllowDBNull),
-                Binding = new Avalonia.Data.Binding($"[{col.Ordinal}]")
+                Binding = new Avalonia.Data.Binding($"C{col.Ordinal}")
                 {
                     Mode = Avalonia.Data.BindingMode.OneWay
                 },
@@ -81,13 +81,13 @@ public partial class ResultConsoleView : UserControl
             });
         }
 
-        var rows = new ObservableCollection<string[]>();
+        var rows = new ObservableCollection<GridRow>();
         foreach (DataRow row in table.Rows)
         {
             var arr = new string[table.Columns.Count];
             for (int i = 0; i < table.Columns.Count; i++)
                 arr[i] = row[i] is DBNull ? "" : row[i]?.ToString() ?? "";
-            rows.Add(arr);
+            rows.Add(new GridRow(arr));
         }
 
         ResultsGrid.ItemsSource = rows;
@@ -97,8 +97,8 @@ public partial class ResultConsoleView : UserControl
 
     public void ShowError(string message)
     {
-        // ResultsGrid.Columns.Clear();
-        // ResultsGrid.ItemsSource = null;
+        ResultsGrid.Columns.Clear();
+        ResultsGrid.ItemsSource = null;
         RowCountText.Text = message;
         ElapsedText.Text = "";
     }
@@ -156,4 +156,20 @@ public class SimpleRow
 public class DataRowWrapper(DataRow row)
 {
     public DataRow Row => row;
+}
+
+public class GridRow
+{
+    private readonly string[] _values;
+    public GridRow(string[] values) => _values = values;
+    public string C0 => _values.ElementAtOrDefault(0) ?? "";
+    public string C1 => _values.ElementAtOrDefault(1) ?? "";
+    public string C2 => _values.ElementAtOrDefault(2) ?? "";
+    public string C3 => _values.ElementAtOrDefault(3) ?? "";
+    public string C4 => _values.ElementAtOrDefault(4) ?? "";
+    public string C5 => _values.ElementAtOrDefault(5) ?? "";
+    public string C6 => _values.ElementAtOrDefault(6) ?? "";
+    public string C7 => _values.ElementAtOrDefault(7) ?? "";
+    public string C8 => _values.ElementAtOrDefault(8) ?? "";
+    public string C9 => _values.ElementAtOrDefault(9) ?? "";
 }
