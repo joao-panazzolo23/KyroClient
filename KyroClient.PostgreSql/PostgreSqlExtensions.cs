@@ -12,7 +12,7 @@ public static class PostgreSqlExtensions
         return services
                 .AddScoped<IDatabaseConnection, PostgreSqlConnection>()
                 .AddScoped<ISchemaExplorer, PostgresSchemaExplorer>()
-                .AddScoped<PostgreSqlConnection>()
+                // .AddScoped<PostgreSqlConnection>()
             ;
     }
 }

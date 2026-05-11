@@ -30,7 +30,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <sidebar:SidebarView Grid.Column="0" x:Name="Sidebar" />
+        <sidebar:SidebarView Grid.Column="0" x:Name="Sidebar" DataContext="{Binding}" />
 
         <GridSplitter Grid.Column="1"
                       ResizeDirection="Columns"
@@ -39,14 +39,14 @@
                       VerticalAlignment="Stretch"
                       Cursor="SizeWestEast" />
 
-        <Grid Grid.Column="2">
+        <Grid Grid.Column="2" VerticalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="4" />
                 <RowDefinition Height="250" />
             </Grid.RowDefinitions>
 
-            <views:QueryEditorView Grid.Row="0" />
+            <views:QueryEditorView Grid.Row="0" DataContext="{Binding}" />
 
             <GridSplitter Grid.Row="1"
                           ResizeDirection="Rows"
@@ -55,7 +55,7 @@
                           VerticalAlignment="Stretch"
                           Cursor="SizeNorthSouth" />
 
-            <console:ResultConsoleView Grid.Row="2" />
+            <console:ResultConsoleView Grid.Row="2" DataContext="{Binding}" />
         </Grid>
 
     </Grid>

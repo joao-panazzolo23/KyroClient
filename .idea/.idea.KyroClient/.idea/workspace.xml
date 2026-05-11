@@ -15,31 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0cbd61c-9393-4af3-9fa8-36b69eeca282" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/KyroClient.Core/Extensions/DataTableExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Dto/ResultConsoleDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KyroClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KyroClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/Connection/Models/QueryResultSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/Connection/Models/QueryResultSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/Schemas/Services/ISchemaExplorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/Schemas/Services/ISchemaExplorer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/bin/Debug/net10.0/KyroClient.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/KyroClient.Core.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/ref/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/ref/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/refint/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/Debug/net10.0/refint/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Core/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/Main/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/Main/ViewModels/MainWindowViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/Main/ViewModels/ViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/ViewModelBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/Main/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/Main/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Dto/ResultConsoleDto.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/Sidebar/Viewmodels/SidebarViewmodel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.Desktop.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.PostgreSql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/bin/Debug/net10.0/KyroClient.PostgreSql.dll" afterDir="false" />
@@ -49,72 +30,21 @@
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/KyroClient.Desktop.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/ref/KyroClient.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/ref/KyroClient.Desktop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/refint/KyroClient.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/Debug/net10.0/refint/KyroClient.Desktop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.Desktop/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.Desktop/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.Core.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.EncryptFile.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.EncryptFile.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/KyroClient.EncryptFile.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClie.A8E03AD5.Up2Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/KyroClient.EncryptFile.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/ref/KyroClient.EncryptFile.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/Debug/net10.0/refint/KyroClient.EncryptFile.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.EncryptFile/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/bin/Debug/net10.0/KyroClient.LinuxSecrets.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/bin/Debug/net10.0/KyroClient.LinuxSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/bin/Debug/net10.0/KyroClient.LinuxSecrets.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/KyroClient.LinuxSecrets.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/ref/KyroClient.LinuxSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/Debug/net10.0/refint/KyroClient.LinuxSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.LinuxSecrets/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgresSchemaExplorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgresSchemaExplorer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/PostgreSqlExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/PostgreSqlExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/bin/Debug/net10.0/KyroClient.PostgreSql.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/ref/KyroClient.PostgreSql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/ref/KyroClient.PostgreSql.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/refint/KyroClient.PostgreSql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/Debug/net10.0/refint/KyroClient.PostgreSql.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.PostgreSql/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/bin/Debug/net10.0/KyroClient.WindowsSecrets.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/bin/Debug/net10.0/KyroClient.WindowsSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/bin/Debug/net10.0/KyroClient.WindowsSecrets.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/KyroClient.WindowsSecrets.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/ref/KyroClient.WindowsSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/Debug/net10.0/refint/KyroClient.WindowsSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.WindowsSecrets/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KyroClient.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/KyroClient.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,6 +89,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bcb6034699684bdc8fd35d47cc5d1ea2e400/9c/90fc1548/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1579bf835158dd6aec6bad778df36f37e1ed9bdaa7c2b533f598f5c59bd4/StandardAssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/21feda723d91dd6c2bc71fb94d543648241d2689ff0b072e5c0f625163c7/PropertyInfoAccessorFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2874f7b67c8e35104a0ae999b2d64a95137fc/KyroClient.Desktop.Main.Views.MainWindow.g.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3386a0a7877d7c023e5fa33902ac1c815bd8bb3afa9ad86678e6eb4169dd3ba/AvaloniaObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51986e38149d7168a48244177b10e8ce2c0faf1d4b35fbbeaf26cb3d652320/CallSiteFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/584fa6231edaa9de2a84fb6c52ccead0cd70245a8a4a69eb69c7a165fbfadc89/BindingExpression.cs" root0="FORCE_HIGHLIGHTING" />
@@ -191,7 +122,6 @@
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/Extensions/ServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/QueryEditor/Views/QueryEditorView.axaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Dto/ResultConsoleDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/ResultConsole/Views/ResultConsoleView.axaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.Desktop/Sidebar/Views/SidebarView.axaml" root0="FORCE_HIGHLIGHTING" />
@@ -201,7 +131,7 @@
     <setting file="file://$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgreSqlConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgresSchemaExplorer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KyroClient.PostgreSql/PostgreSqlExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file:///tmp/JetBrainsPerUserTemp-1000-1/SourceGeneratedDocuments/3968DFE58CEB464ADBDEF484/CommunityToolkit.Mvvm.SourceGenerators/CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator/KyroClient.Desktop.ResultConsole.Dto.ResultConsoleDto.g.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///usr/lib/dotnet/sdk/10.0.107/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -213,38 +143,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.KyroClient.Desktop.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.7965261&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/john/RiderProjects/KyroClient&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.KyroClient.Desktop.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "XThreadsFramesViewSplitterKey": "0.5288303",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/john/RiderProjects/KyroClient",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.KyroClient.Desktop">
     <configuration name="AvaloniaApplication1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -300,7 +230,7 @@
       <workItem from="1778294793703" duration="2486000" />
       <workItem from="1778329674348" duration="47240000" />
       <workItem from="1778421274997" duration="9227000" />
-      <workItem from="1778451405574" duration="4573000" />
+      <workItem from="1778451405574" duration="9191000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Project structure &amp; Core definitions">
       <option name="closed" value="true" />
@@ -406,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778385029080</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: i have no idea whats going on anymore">
+      <option name="closed" value="true" />
+      <created>1778456063146</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1778456063146</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,37 +366,15 @@
     <MESSAGE value="feat: cleaning sidebar &amp; styles" />
     <MESSAGE value="fix: sidebar active effect" />
     <MESSAGE value="feat: hardcoding everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: hardcoding everything" />
+    <MESSAGE value="feat: i have no idea whats going on anymore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: i have no idea whats going on anymore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgresSchemaExplorer.cs</url>
-          <line>192</line>
-          <properties documentPath="$PROJECT_DIR$/KyroClient.PostgreSql/Connection/PostgresSchemaExplorer.cs" containingFunctionPresentation="Method 'ExecuteQuery'">
-            <startOffsets>
-              <option value="7727" />
-            </startOffsets>
-            <endOffsets>
-              <option value="7757" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DotNet_Exception_Breakpoints" />
+        <breakpoint type="CMakeExceptionBreakpoint" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

@@ -1,53 +1,104 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
+using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Media;
+using KyroClient.Desktop.Main.ViewModels;
 
 namespace KyroClient.Desktop.ResultConsole.Views;
 
 public partial class ResultConsoleView : UserControl
 {
+    private static readonly SolidColorBrush BrushColumnName = new(Color.Parse("#BCBEC4"));
+    private static readonly SolidColorBrush BrushTypeName = new(Color.Parse("#4D8CC8"));
+    private static readonly SolidColorBrush BrushNullable = new(Color.Parse("#7A7E85"));
+
     public ResultConsoleView()
     {
         InitializeComponent();
+
+        // var col = new DataGridTextColumn
+        // {
+        //     Header = "Test",
+        //     Binding = new Avalonia.Data.Binding("Name"),
+        // };
+        // ResultsGrid.Columns.Add(col);
+
+        DataContextChanged += (_, _) =>
+        {
+            if (DataContext is MainWindowViewModel vm)
+            {
+                vm.OnQueryExecuted = (table, elapsed) =>
+                    Avalonia.Threading.Dispatcher.UIThread.Post(() => ShowResults(table, elapsed));
+                vm.OnQueryFailed = msg =>
+                    Avalonia.Threading.Dispatcher.UIThread.Post(() => ShowError(msg));
+            }
+        };
     }
+
+    // public void ShowResults(DataTable table, TimeSpan elapsed)
+    // {
+    //     ResultsGrid.Text = string.Join("\n",
+    //         Enumerable.Range(0, table.Rows.Count)
+    //             .Select(i => string.Join(" | ",
+    //                 Enumerable.Range(0, table.Columns.Count)
+    //                     .Select(j => table.Rows[i][j]?.ToString() ?? ""))));
+    //
+    //     RowCountText.Text = $"{table.Rows.Count} rows";
+    //     ElapsedText.Text = $"{elapsed.TotalMilliseconds:F0} ms";
+    // }
+
+
+    // public void ShowResults(DataTable table, TimeSpan elapsed)
+    // {
+    //     ResultsGrid.Columns.Clear();
+    //     ResultsGrid.ItemsSource = null;
+    //
+    //     var rows = new DataView(table);
+    //     ResultsGrid.ItemsSource = rows;
+    //     ResultsGrid.AutoGenerateColumns = true;
+    //     
+    //}
 
     public void ShowResults(DataTable table, TimeSpan elapsed)
     {
         ResultsGrid.Columns.Clear();
+        ResultsGrid.ItemsSource = null;
 
-        // build columns dynamically from DataTable schema
         foreach (DataColumn col in table.Columns)
         {
-            var isNullable = col.AllowDBNull;
-            var typeName = MapTypeName(col.DataType);
-            var header = BuildHeader(col.ColumnName, typeName, isNullable);
-
             ResultsGrid.Columns.Add(new DataGridTextColumn
             {
-                Header = header,
-                Binding = new Avalonia.Data.Binding($"[{col.Ordinal}]"),
+                Header = BuildHeader(col.ColumnName, MapTypeName(col.DataType), col.AllowDBNull),
+                Binding = new Avalonia.Data.Binding($"[{col.Ordinal}]")
+                {
+                    Mode = Avalonia.Data.BindingMode.OneWay
+                },
                 CanUserResize = true,
-                CanUserSort = true,
+                CanUserSort = false,
             });
         }
 
-        // wrap rows for indexer binding
-        var rows = new List<DataRowWrapper>();
+        var rows = new ObservableCollection<string[]>();
         foreach (DataRow row in table.Rows)
-            rows.Add(new DataRowWrapper(row));
+        {
+            var arr = new string[table.Columns.Count];
+            for (int i = 0; i < table.Columns.Count; i++)
+                arr[i] = row[i] is DBNull ? "" : row[i]?.ToString() ?? "";
+            rows.Add(arr);
+        }
 
         ResultsGrid.ItemsSource = rows;
-
         RowCountText.Text = $"{table.Rows.Count} rows";
         ElapsedText.Text = $"{elapsed.TotalMilliseconds:F0} ms";
     }
 
     public void ShowError(string message)
     {
-        ResultsGrid.Columns.Clear();
-        ResultsGrid.ItemsSource = null;
+        // ResultsGrid.Columns.Clear();
+        // ResultsGrid.ItemsSource = null;
         RowCountText.Text = message;
         ElapsedText.Text = "";
     }
@@ -59,14 +110,14 @@ public partial class ResultConsoleView : UserControl
         panel.Children.Add(new TextBlock
         {
             Text = name,
-            Foreground = new SolidColorBrush(Color.Parse("#BCBEC4")),
+            Foreground = BrushColumnName,
             FontWeight = FontWeight.SemiBold,
         });
 
         panel.Children.Add(new TextBlock
         {
             Text = typeName,
-            Foreground = new SolidColorBrush(Color.Parse("#4D8CC8")),
+            Foreground = BrushTypeName,
             FontSize = 10,
             VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
         });
@@ -75,7 +126,7 @@ public partial class ResultConsoleView : UserControl
             panel.Children.Add(new TextBlock
             {
                 Text = "?",
-                Foreground = new SolidColorBrush(Avalonia.Media.Color.Parse("#7A7E85")),
+                Foreground = BrushNullable,
                 FontSize = 10,
                 VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
             });
@@ -83,7 +134,6 @@ public partial class ResultConsoleView : UserControl
         return panel;
     }
 
-    //todo: refactor
     private static string MapTypeName(Type type) => type switch
     {
         _ when type == typeof(int) || type == typeof(long) || type == typeof(short) => "int",
@@ -97,8 +147,13 @@ public partial class ResultConsoleView : UserControl
     };
 }
 
+public class SimpleRow
+{
+    public string Col0 { get; set; } = "";
+}
+
 // todo: new file, maybe rewrite
 public class DataRowWrapper(DataRow row)
 {
-    public object? this[int index] => row[index] is DBNull ? null : row[index];
+    public DataRow Row => row;
 }
