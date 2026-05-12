@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyroClient.PostgreSql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+713e3b20e19f5af80f12c67b414e245c8510e6df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35bfb5276ad3ed6d0e17b66a38c9fd76cd545352")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyroClient.PostgreSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyroClient.PostgreSql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

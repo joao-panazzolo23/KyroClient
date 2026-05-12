@@ -18,14 +18,7 @@ public partial class ResultConsoleView : UserControl
     public ResultConsoleView()
     {
         InitializeComponent();
-
-        // var col = new DataGridTextColumn
-        // {
-        //     Header = "Test",
-        //     Binding = new Avalonia.Data.Binding("Name"),
-        // };
-        // ResultsGrid.Columns.Add(col);
-
+        
         DataContextChanged += (_, _) =>
         {
             if (DataContext is MainWindowViewModel vm)
@@ -37,31 +30,7 @@ public partial class ResultConsoleView : UserControl
             }
         };
     }
-
-    // public void ShowResults(DataTable table, TimeSpan elapsed)
-    // {
-    //     ResultsGrid.Text = string.Join("\n",
-    //         Enumerable.Range(0, table.Rows.Count)
-    //             .Select(i => string.Join(" | ",
-    //                 Enumerable.Range(0, table.Columns.Count)
-    //                     .Select(j => table.Rows[i][j]?.ToString() ?? ""))));
-    //
-    //     RowCountText.Text = $"{table.Rows.Count} rows";
-    //     ElapsedText.Text = $"{elapsed.TotalMilliseconds:F0} ms";
-    // }
-
-
-    // public void ShowResults(DataTable table, TimeSpan elapsed)
-    // {
-    //     ResultsGrid.Columns.Clear();
-    //     ResultsGrid.ItemsSource = null;
-    //
-    //     var rows = new DataView(table);
-    //     ResultsGrid.ItemsSource = rows;
-    //     ResultsGrid.AutoGenerateColumns = true;
-    //     
-    //}
-
+    
     public void ShowResults(DataTable table, TimeSpan elapsed)
     {
         ResultsGrid.Columns.Clear();
