@@ -13,6 +13,7 @@ public interface ISchemaExplorer
 
     Task<IReadOnlyList<ColumnInfo>> GetColumns(
         string database,
+        string schema,
         string table,
         CancellationToken ct = default
     );

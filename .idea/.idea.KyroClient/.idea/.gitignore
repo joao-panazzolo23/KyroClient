@@ -68,3 +68,31 @@ docker-compose.override.yml
 
 # Dumps
 *.dmp
+
+
+# --- Compilação (Binários e Temps) ---
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# --- Visual Studio ---
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.vsidx
+
+# --- JetBrains (Rider) ---
+.idea/
+*.sln.DotSettings.user
+
+# --- Avalonia Específico ---
+# Às vezes o previewer gera arquivos temporários, mas o obj/ já cobre 99%
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "JOcxLbcWB2k=",
+  "dgSpecHash": "/7J1SX9nmO4=",
   "success": true,
-  "projectFilePath": "/home/john/RiderProjects/KyroClient/KyroClient.Core/KyroClient.Core.csproj",
+  "projectFilePath": "C:\\Users\\equip\\OneDrive\\Desktop\\apresentacao DDD\\KyroClient\\KyroClient.Core\\KyroClient.Core.csproj",
   "expectedPackageFiles": [
-    "/home/john/.nuget/packages/avalonia/12.0.0/avalonia.12.0.0.nupkg.sha512",
-    "/home/john/.nuget/packages/avalonia.buildservices/11.3.2/avalonia.buildservices.11.3.2.nupkg.sha512",
-    "/home/john/.nuget/packages/avalonia.remote.protocol/12.0.0/avalonia.remote.protocol.12.0.0.nupkg.sha512",
-    "/home/john/.nuget/packages/material.icons/3.0.2/material.icons.3.0.2.nupkg.sha512",
-    "/home/john/.nuget/packages/material.icons.avalonia/3.0.2/material.icons.avalonia.3.0.2.nupkg.sha512",
-    "/home/john/.nuget/packages/microcom.runtime/0.11.4/microcom.runtime.0.11.4.nupkg.sha512"
+    "C:\\Users\\equip\\.nuget\\packages\\avalonia\\12.0.0\\avalonia.12.0.0.nupkg.sha512",
+    "C:\\Users\\equip\\.nuget\\packages\\avalonia.buildservices\\11.3.2\\avalonia.buildservices.11.3.2.nupkg.sha512",
+    "C:\\Users\\equip\\.nuget\\packages\\avalonia.remote.protocol\\12.0.0\\avalonia.remote.protocol.12.0.0.nupkg.sha512",
+    "C:\\Users\\equip\\.nuget\\packages\\material.icons\\3.0.2\\material.icons.3.0.2.nupkg.sha512",
+    "C:\\Users\\equip\\.nuget\\packages\\material.icons.avalonia\\3.0.2\\material.icons.avalonia.3.0.2.nupkg.sha512",
+    "C:\\Users\\equip\\.nuget\\packages\\microcom.runtime\\0.11.4\\microcom.runtime.0.11.4.nupkg.sha512"
   ],
   "logs": []
 }

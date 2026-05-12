@@ -78,90 +78,59 @@ public class PostgresSchemaExplorer(NpgsqlConnection connection) : ISchemaExplor
         return result;
     }
 
-    // public async Task<IReadOnlyList<TableInfo>> GetTables(string database, CancellationToken ct = default)
-    // {
-    //     if (connection.State != ConnectionState.Open)
-    //         await connection.OpenAsync(ct);
-    //
-    //     const string sql = """
-    //                        SELECT
-    //                            t.table_schema,
-    //                            t.table_name,
-    //                            t.table_type
-    //                        FROM information_schema.tables t
-    //                        JOIN pg_catalog.pg_class c ON c.relname = t.table_name
-    //                        JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace AND n.nspname = t.table_schema
-    //                        WHERE t.table_schema NOT IN ('pg_catalog', 'information_schema')
-    //                        ORDER BY t.table_schema, t.table_name;
-    //                        """;
-    //     try
-    //     {
-    //         await using var cmd = connection.CreateCommand();
-    //         cmd.CommandText = sql;
-    //
-    //         await using var reader = await cmd.ExecuteReaderAsync(ct);
-    //         var result = new List<TableInfo>();
-    //         while (await reader.ReadAsync(ct))
-    //             result.Add(new TableInfo
-    //             {
-    //                 Schema = reader.GetString(0),
-    //                 Name = reader.GetString(1),
-    //                 Kind = reader.GetString(2) == "VIEW" ? TableKind.View : TableKind.Table
-    //             });
-    //
-    //         return result;
-    //     }
-    //     catch (Exception e)
-    //     {
-    //         Console.WriteLine(e);
-    //         throw;
-    //     }
-    // }
-
     public async Task<IReadOnlyList<ColumnInfo>> GetColumns(
         string database,
+        string schema,
         string table,
         CancellationToken ct = default
     )
     {
-        if (connection.State != ConnectionState.Open)
-            await connection.OpenAsync(ct);
+        // 1. Monte a string de conexão para o banco específico
+        var connStr = $"Host=localhost;Port=5432;Username=postgres;Password=postgres;Database={database}";
 
+        // 2. Use o 'await using' para garantir que TUDO seja fechado sozinho
+        await using var dbConn = new NpgsqlConnection(connStr);
+        await dbConn.OpenAsync(ct);
+
+        // Adicionei o filtro de schema na query para evitar ambiguidade
         const string sql = """
-                           SELECT
-                               c.column_name,
-                               c.data_type,
-                               c.is_nullable = 'YES',
-                               c.column_default,
-                               c.ordinal_position,
-                               EXISTS (
-                                   SELECT 1
-                                   FROM information_schema.table_constraints tc
-                                   JOIN information_schema.key_column_usage kcu
-                                       ON kcu.constraint_name = tc.constraint_name
-                                       AND kcu.table_schema = tc.table_schema
-                                   WHERE tc.constraint_type = 'PRIMARY KEY'
-                                     AND tc.table_name = c.table_name
-                                     AND kcu.column_name = c.column_name
-                               ) AS is_pk
-                           FROM information_schema.columns c
-                           WHERE c.table_name = @table
-                             AND c.table_schema NOT IN ('pg_catalog', 'information_schema')
-                           ORDER BY c.ordinal_position;
-                           """;
-        //todo: find a better way to open connections. that sucks.
-        if (connection.State != ConnectionState.Open)
-            await connection.OpenAsync(ct);
+        SELECT 
+            c.column_name, 
+            c.data_type, 
+            c.is_nullable = 'YES', 
+            c.column_default, 
+            c.ordinal_position,
+            EXISTS (
+                SELECT 1 
+                FROM information_schema.table_constraints tc
+                JOIN information_schema.key_column_usage kcu 
+                    ON kcu.constraint_name = tc.constraint_name 
+                    AND kcu.table_schema = tc.table_schema
+                WHERE tc.constraint_type = 'PRIMARY KEY' 
+                  AND tc.table_name = c.table_name 
+                  AND kcu.column_name = c.column_name
+                  AND tc.table_schema = @schema
+            ) AS is_pk
+        FROM information_schema.columns c
+        WHERE c.table_name = @table 
+          AND c.table_schema = @schema
+        ORDER BY c.ordinal_position;
+        """;
 
         try
         {
-            await using var cmd = connection.CreateCommand();
+            await using var cmd = dbConn.CreateCommand();
             cmd.CommandText = sql;
+
+            // Passando os parâmetros sem aspas, exatamente como estão no banco
             cmd.Parameters.AddWithValue("table", table);
+            cmd.Parameters.AddWithValue("schema", schema);
 
             await using var reader = await cmd.ExecuteReaderAsync(ct);
             var result = new List<ColumnInfo>();
+
             while (await reader.ReadAsync(ct))
+            {
                 result.Add(new ColumnInfo
                 {
                     Name = reader.GetString(0),
@@ -171,14 +140,18 @@ public class PostgresSchemaExplorer(NpgsqlConnection connection) : ISchemaExplor
                     OrdinalPosition = reader.GetInt32(4),
                     IsPrimaryKey = reader.GetBoolean(5),
                 });
+            }
 
             return result;
         }
-        catch
+        catch (Exception ex)
         {
+            // Log do erro real para você debugar no console
+            Console.WriteLine($"Erro ao ler colunas de {database}.{schema}.{table}: {ex.Message}");
+            // Retornar lista vazia é mais seguro que null para evitar Crash na UI
+            return new List<ColumnInfo>();
         }
-
-        return null;
+        // O 'await using' lá de cima já faz o Close e Dispose automaticamente aqui
     }
 
     public void Dispose() => connection.Dispose();

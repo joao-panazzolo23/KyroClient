@@ -15,3 +15,20 @@
 /home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/refint/KyroClient.PostgreSql.dll
 /home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/KyroClient.PostgreSql.pdb
 /home/john/RiderProjects/KyroClient/KyroClient.PostgreSql/obj/Debug/net10.0/ref/KyroClient.PostgreSql.dll
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\bin\Debug\net10.0\KyroClient.PostgreSql.deps.json
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\bin\Debug\net10.0\KyroClient.PostgreSql.dll
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\bin\Debug\net10.0\KyroClient.PostgreSql.pdb
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\bin\Debug\net10.0\KyroClient.Core.dll
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\bin\Debug\net10.0\KyroClient.Core.pdb
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.csproj.AssemblyReference.cache
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\Avalonia\Resources.Inputs.cache
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.AssemblyInfoInputs.cache
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.AssemblyInfo.cs
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.csproj.CoreCompileInputs.cache
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.sourcelink.json
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClie.6FF36F88.Up2Date
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.dll
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\refint\KyroClient.PostgreSql.dll
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\KyroClient.PostgreSql.pdb
+C:\Users\equip\OneDrive\Desktop\apresentacao DDD\KyroClient\KyroClient.PostgreSql\obj\Debug\net10.0\ref\KyroClient.PostgreSql.dll
